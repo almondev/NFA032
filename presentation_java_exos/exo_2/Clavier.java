@@ -60,10 +60,6 @@ public class Clavier
     int n  ;
     n = Clavier.lireInt() ;
     System.out.println ("merci pour " + n) ;
-    
-    String chaine ;
-    System.out.println ("donnez une chaine de caractère") ;  
-    chaine =  Clavier.lireString(); 
   }
 }
 
