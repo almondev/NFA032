@@ -1,30 +1,26 @@
 public class Exo2 {
-	public void Test(double _nbr1, double _nbr2){
-		double nbr1 = _nbr1;
-		double nbr2 = _nbr2;
+	public void Test(int nbr1, int nbr2){
+
 		System.out.println( "Le produit de " + nbr1 + " par " + nbr2 + " -> ");
-		if (nbr1 == 0.0 || nbr2 == 0){
+		
+		if((nbr1 == 0) || (nbr2 == 0)){  // JBU : Il vaut surparenthéser pour éviter les problèmes de priorité 
+						 // des opérateurs.
 			System.out.println( "Le produit est nul" );
-		}
-		else if ( ( nbr1 < 0.0 && nbr2 < 0.0 ) || (  nbr1 > 0.0 && nbr2 > 0.0  ) ) {
-			System.out.println( "Le produit est positif" );
-		}
-		else {
-			System.out.println( "Le produit est négatif" );
+		} else if(((nbr1 < 0) && (nbr2 < 0)) || ((nbr1 > 0) && (nbr2 > 0))) {
+			System.out.println("Le produit est positif");
+		} else {
+			System.out.println("Le produit est négatif");
 		}	
 	}
-	public void Test_XOR(double _nbr1, double _nbr2){
-		double nbr1 = _nbr1;
-		double nbr2 = _nbr2;
+	public void Test_XOR(int nbr1, int nbr2){
 		System.out.println( "Test version simplifiée XOR :" );
 		System.out.println( "Le produit de " + nbr1 + " par " + nbr2 + " -> ");
-		if (nbr1 == 0.0 || nbr2 == 0){
+		
+		if((nbr1 == 0) || (nbr2 == 0)){
 			System.out.println( "Le produit est nul" );
-		}
-		else if ( nbr1 < 0.0 ^ nbr2 < 0.0 ) {
+		} else if ((nbr1 < 0.0) ^ (nbr2 < 0)) {
 			System.out.println( "Le produit est négatif" );
-		}
-		else {
+		} else {
 			System.out.println( "Le produit est positif" );
 		}	
 	}	
