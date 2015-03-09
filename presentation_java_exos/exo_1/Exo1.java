@@ -1,6 +1,9 @@
 public class Exo1 {
-	public void Test(double _temp){
-		double temp = _temp;
+	public void Test(double _temp){ // JBU : Respecte les convention de nommage de Google : 
+					// https://google-styleguide.googlecode.com/svn/trunk/javaguide.html
+		double temp = _temp; 	// JBU : Pourquoi ? C'est inutile si tu utilises _temp. 
+					// Et pourquoi un double ? Il faut éviter d'utiliser les double et les float quand 
+					// ce n'est pas nécessaire.
 		System.out.println( "La température de " + temp + " °C  -> ");
 		if (temp <= 0.0){
 			System.out.println( "C’est de la glace" );
@@ -17,7 +20,8 @@ public class Exo1 {
 		// TODO Auto-generated method stub
 		System.out.println( "Exo 1" );
 		double temp;		
-		Exo1 exo1 = new Exo1();
+		Exo1 exo1 = new Exo1(); // JBU : Il faut créer une méthode statique, c'est plus simple. 
+					// Mais nous allons voir ça en cours.
 		System.out.println( "Température du zéro absolu -273,15 °C");
 		exo1.Test(-273.15);
 		exo1.Test(99.99);
