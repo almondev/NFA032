@@ -7,10 +7,10 @@ public class Exo5 {
 		rubriquesMenu[2]="qui sommes nous ? ";
 		rubriquesMenu[3]="contact";	
 		System.out.println( "Affiche le tableau");
-		for(int i=0; i<4;i++){
+		for(int i=0; i<rubriquesMenu.length;i++){
 			System.out.println(rubriquesMenu[i]);
 		}
-		
+		/* Deuxième tableau passé en paramètre dans la fonction Test depuis le main:  */
 		System.out.println( "Affiche le deuxième tableau");
 		int taille = tab.length;
 		System.out.println( "Taille" + taille);
@@ -22,7 +22,7 @@ public class Exo5 {
 		for (int i=0; i< taille; i++){
 			System.out.println(rubriquesMenu2[i]);
 		}
-		
+		/* Tableau que l'on va créer dynamiquement */
 		System.out.println( "Affiche le troisème tableau avec la saisie utilisateur");
 		System.out.println( "Donnez le nombre de rubrique du menu");
 		int nbr = Clavier.lireInt() ;
