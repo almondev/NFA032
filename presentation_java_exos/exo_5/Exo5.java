@@ -1,4 +1,3 @@
-import java.util.*;
 public class Exo5 {
 	public static void Test(String tab[]) {
 		String rubriquesMenu[]={"","","",""};
